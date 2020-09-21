@@ -11,7 +11,7 @@
 <h4 id="创建Canvas元素"><a href="#创建Canvas元素" class="headerlink" title="创建Canvas元素"></a>创建Canvas元素</h4><p>向 HTML5 页面添加 canvas 元素。</p>
 <p>画布的大小在canvas中添加，不能单独设置<br>规定元素的 id、宽度和高度：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">&quot;myCanvas&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="Canvas坐标系"><a href="#Canvas坐标系" class="headerlink" title="Canvas坐标系"></a>Canvas坐标系</h4><p><img src="images/location.jpg"></p>
+<h4 id="Canvas坐标系"><a href="#Canvas坐标系" class="headerlink" title="Canvas坐标系"></a>Canvas坐标系</h4><p><img data-src="images/location.jpg"></p>
 <h4 id="通过JavaScript来绘制"><a href="#通过JavaScript来绘制" class="headerlink" title="通过JavaScript来绘制"></a>通过JavaScript来绘制</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*获取元素*/</span></span><br><span class="line"><span class="keyword">var</span> myCanvas = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;#myCanvas&#x27;</span>);</span><br><span class="line"><span class="comment">/*获取绘图工具*/</span></span><br><span class="line"><span class="keyword">var</span> context = myCanvas.getContext(<span class="string">&#x27;2d&#x27;</span>);</span><br><span class="line"><span class="comment">/*设置绘图的起始位置*/</span></span><br><span class="line">context.moveTo(<span class="number">100</span>,<span class="number">100</span>);</span><br><span class="line"><span class="comment">/*绘制路径*/</span></span><br><span class="line">context.lineTo(<span class="number">200</span>,<span class="number">200</span>);</span><br><span class="line"><span class="comment">/*描边*/</span></span><br><span class="line">context.stroke();</span><br></pre></td></tr></table></figure>
 
 <h3 id="Canvas的基本使用"><a href="#Canvas的基本使用" class="headerlink" title="Canvas的基本使用"></a>Canvas的基本使用</h3><h4 id="模糊问题（1px，黑色）"><a href="#模糊问题（1px，黑色）" class="headerlink" title="模糊问题（1px，黑色）"></a>模糊问题（1px，黑色）</h4><ul>
@@ -24,7 +24,7 @@
 <li>路径的概念</li>
 <li>路径的绘制<ul>
 <li>描边 stroke()  </li>
-<li>填充 fill()<br><img src="images/path.jpg">  </li>
+<li>填充 fill()<br><img data-src="images/path.jpg">  </li>
 </ul>
 </li>
 <li>闭合路径<ul>
@@ -32,7 +32,7 @@
 <li>程序闭合 closePath()   关闭lineTo的路径，达到自动闭合的目的，解决图形缺角问题。</li>
 </ul>
 </li>
-<li><strong>填充规则(非零环绕填充)</strong>  ：判断某个区域是否被填充，从该区域引一条线，有那条与它相交的线，如果相交线是顺时针的就<code>+1</code>，逆时针就<code>-1</code>,结果为非零的就填充，是零则填充。<br><img src="images/zero.jpg"></li>
+<li><strong>填充规则(非零环绕填充)</strong>  ：判断某个区域是否被填充，从该区域引一条线，有那条与它相交的线，如果相交线是顺时针的就<code>+1</code>，逆时针就<code>-1</code>,结果为非零的就填充，是零则填充。<br><img data-src="images/zero.jpg"></li>
 <li>开启全的路径 beginPath()   解决样式覆盖的问题（三条平行线桌不同的颜色）</li>
 </ul>
 <h4 id="设置样式"><a href="#设置样式" class="headerlink" title="设置样式"></a>设置样式</h4><ul>
@@ -194,6 +194,9 @@
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>canvas画布</category>
+      </categories>
       <tags>
         <tag>canvas</tag>
       </tags>
@@ -205,26 +208,26 @@
 <a id="more"></a>
 <h3 id="1-2HTTP诞生"><a href="#1-2HTTP诞生" class="headerlink" title="1.2HTTP诞生"></a>1.2HTTP诞生</h3><p>1989 年 3 月 CERN（欧洲核子研究组织） 的蒂姆 • 伯纳斯 - 李（Tim BernersLee）博士提出了一种能让远隔两地的研究者们共享知识的设想，蒂姆 • 伯纳斯 - 李也成为万维网之父。</p>
 <h3 id="1-3-网络技术TCP-IP"><a href="#1-3-网络技术TCP-IP" class="headerlink" title="1.3 网络技术TCP/IP"></a>1.3 网络技术TCP/IP</h3><p>TCP/IP 协议族里重要的一点就是分层。 TCP/IP 协议族按层次分别分为以下 4 层： 应用层、 传输层、 网络层和数据链路层。 </p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725210441053.png" alt="image-20200725210441053" style="zoom:100%;" />
+<img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725210441053.png" alt="image-20200725210441053" style="zoom:100%;" />
 
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725210539920.png" alt="image-20200725210539920"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725210539920.png" alt="image-20200725210539920"></p>
 <h3 id="1-4-与HTTP关系密切的协议：IP、TCP、DNS"><a href="#1-4-与HTTP关系密切的协议：IP、TCP、DNS" class="headerlink" title="1.4 与HTTP关系密切的协议：IP、TCP、DNS"></a>1.4 与HTTP关系密切的协议：IP、TCP、DNS</h3><ol>
 <li>IP协议：它的作用是把各种数据包传送给对方。 而要保证确实传送到对方那里， 则需要满足各类条件。 其中两个重要的条件是 IP 地址和 MAC地址（Media Access Control Address） 。 </li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725210818345.png" alt="image-20200725210818345"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725210818345.png" alt="image-20200725210818345"></p>
 <ol start="2">
 <li><p>TCP：按层次分， TCP 位于传输层， 提供可靠的字节流服务 。为了准确无误地将数据送达目标处， TCP 协议采用了三次握手（three-way handshaking） 策略。</p>
 <p>三次握手：</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725211033385.png" alt="image-20200725211033385"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725211033385.png" alt="image-20200725211033385"></p>
 </li>
 <li><p>DNS服务：DNS（Domain Name System） 服务是和 HTTP 协议一样位于应用层的协议。 它提供域名到 IP 地址之间的解析服务。 </p>
 </li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725211217465.png" alt="image-20200725211217465"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725211217465.png" alt="image-20200725211217465"></p>
 <ol start="4">
 <li>各种协议与HTTP协议之间的关系</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725211611098.png" alt="image-20200725211611098"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725211611098.png" alt="image-20200725211611098"></p>
 <ol start="5">
 <li><p>URI和URL</p>
 <ul>
@@ -236,8 +239,8 @@
 </li>
 </ol>
 <h2 id="二、简单的HTTP协议"><a href="#二、简单的HTTP协议" class="headerlink" title="二、简单的HTTP协议"></a>二、简单的HTTP协议</h2><h3 id="2-1-HTTP用于客户端和服务器之间的通信"><a href="#2-1-HTTP用于客户端和服务器之间的通信" class="headerlink" title="2.1 HTTP用于客户端和服务器之间的通信"></a>2.1 HTTP用于客户端和服务器之间的通信</h3><p>在两台计算机之间使用 HTTP 协议通信时， 在一条通信线路上必定有一端是客户端， 另一端则是服务器端。 </p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725212300514.png" alt="image-20200725212300514"></p>
-<h3 id="2-2-HTTP是不保存状态的协议"><a href="#2-2-HTTP是不保存状态的协议" class="headerlink" title="2.2 HTTP是不保存状态的协议"></a>2.2 HTTP是不保存状态的协议</h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725212537106.png" alt="image-20200725212537106"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725212300514.png" alt="image-20200725212300514"></p>
+<h3 id="2-2-HTTP是不保存状态的协议"><a href="#2-2-HTTP是不保存状态的协议" class="headerlink" title="2.2 HTTP是不保存状态的协议"></a>2.2 HTTP是不保存状态的协议</h3><p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725212537106.png" alt="image-20200725212537106"></p>
 <blockquote>
 <p>HTTP 协议自身不具备保存之前发送过的请求或响应的功能 </p>
 <p>为了实现期望的保持状态功能， 于是引入了 Cookie 技术。 有了 Cookie 再用HTTP 协议通信， 就可以管理状态了。 </p>
@@ -245,24 +248,24 @@
 <h3 id="2-3-告知服务器意图的HTTP方法"><a href="#2-3-告知服务器意图的HTTP方法" class="headerlink" title="2.3 告知服务器意图的HTTP方法"></a>2.3 告知服务器意图的HTTP方法</h3><ol>
 <li>GET:获取资源</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725213037517.png" alt="image-20200725213037517"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725213037517.png" alt="image-20200725213037517"></p>
 <ol start="2">
 <li>POST:传输实体主体</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725213152396.png" alt="image-20200725213152396"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725213152396.png" alt="image-20200725213152396"></p>
 <ol start="3">
 <li>PUT:传输文件</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725213255799.png" alt="image-20200725213255799"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725213255799.png" alt="image-20200725213255799"></p>
 <ol start="4">
 <li>HEAD：获得报文首部</li>
 <li>DELETE:删除文件</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725213809764.png" alt="image-20200725213809764"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725213809764.png" alt="image-20200725213809764"></p>
 <ol start="6">
 <li>OPTIONS:询问支持的方法</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725214002106.png" alt="image-20200725214002106"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725214002106.png" alt="image-20200725214002106"></p>
 <ol start="7">
 <li><p>TRACE:追踪路径</p>
 </li>
@@ -273,13 +276,13 @@
 <p>Cookie 技术通过在请求和响应报文中写入 Cookie 信息来控制客户端的状态。</p>
 </li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725214424095.png" alt="image-20200725214424095"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725214424095.png" alt="image-20200725214424095"></p>
 <h2 id="三、HTTP报文内的HTTP信息"><a href="#三、HTTP报文内的HTTP信息" class="headerlink" title="三、HTTP报文内的HTTP信息"></a>三、HTTP报文内的HTTP信息</h2><h3 id="3-1-HTTP报文"><a href="#3-1-HTTP报文" class="headerlink" title="3.1 HTTP报文"></a>3.1 HTTP报文</h3><p>用于HTTP交互的信息被称为HTTP报文。请求端（客户端） 的HTTP 报文叫做请求报文， 响应端（服务器端） 的叫做响应报文。 </p>
-<p><img src="https://img-blog.csdn.net/20180423213248663?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plcGh5cjk5OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<h3 id="3-2-请求报文及响应报文的结构"><a href="#3-2-请求报文及响应报文的结构" class="headerlink" title="3.2 请求报文及响应报文的结构"></a>3.2 请求报文及响应报文的结构</h3><p><img src="https://img-blog.csdn.net/20180423213646866?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plcGh5cjk5OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img data-src="https://img-blog.csdn.net/20180423213248663?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plcGh5cjk5OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h3 id="3-2-请求报文及响应报文的结构"><a href="#3-2-请求报文及响应报文的结构" class="headerlink" title="3.2 请求报文及响应报文的结构"></a>3.2 请求报文及响应报文的结构</h3><p><img data-src="https://img-blog.csdn.net/20180423213646866?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plcGh5cjk5OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
 <p>图： 请求报文（上） 和响应报文（下） 的实例 </p>
 <h2 id="四、返回结果的HTTP状态码"><a href="#四、返回结果的HTTP状态码" class="headerlink" title="四、返回结果的HTTP状态码"></a>四、返回结果的HTTP状态码</h2><p>4.1 状态码告知从服务器端返回的请求结果</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725215244431.png" alt="image-20200725215244431"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725215244431.png" alt="image-20200725215244431"></p>
 <p>4.2 <strong>2XX 成功</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">（<span class="number">1</span>）<span class="number">200</span>：OK</span><br><span class="line"></span><br><span class="line">（<span class="number">2</span>）<span class="number">202</span>：No Content</span><br><span class="line"></span><br><span class="line">（<span class="number">3</span>）<span class="number">206</span>：Partial Content</span><br></pre></td></tr></table></figure>
 
@@ -308,35 +311,35 @@
 <li><p>隧道：隧道是在相隔甚远的客户端和服务器两者之间进行中转， 并保持双方通信连接的应用程序。</p>
 </li>
 </ol>
-<h2 id="六、HTTP首部"><a href="#六、HTTP首部" class="headerlink" title="六、HTTP首部"></a>六、HTTP首部</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725215730189.png" alt="image-20200725215730189"></p>
-<h3 id="1-http请求报文"><a href="#1-http请求报文" class="headerlink" title="1.http请求报文"></a>1.http请求报文</h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725215805629.png" alt="image-20200725215805629"></p>
+<h2 id="六、HTTP首部"><a href="#六、HTTP首部" class="headerlink" title="六、HTTP首部"></a>六、HTTP首部</h2><p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725215730189.png" alt="image-20200725215730189"></p>
+<h3 id="1-http请求报文"><a href="#1-http请求报文" class="headerlink" title="1.http请求报文"></a>1.http请求报文</h3><p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200725215805629.png" alt="image-20200725215805629"></p>
 <p>下面的示例是访问 <a href="http://hackr.jp/">http://hackr.jp</a> 时， 请求报文的首部信息</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727090641667.png" alt="image-20200727090641667"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727090641667.png" alt="image-20200727090641667"></p>
 <h3 id="2-HTTP响应报文"><a href="#2-HTTP响应报文" class="headerlink" title="2.HTTP响应报文"></a>2.HTTP响应报文</h3><p>在响应中， HTTP 报文由 HTTP 版本、 状态码（数字和原因短语） 、HTTP 首部字段 3 部分构成。</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727091310622.png" alt="image-20200727091310622"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727091310622.png" alt="image-20200727091310622"></p>
 <h3 id="3-HTTP通用首部字段"><a href="#3-HTTP通用首部字段" class="headerlink" title="3.HTTP通用首部字段"></a>3.HTTP通用首部字段</h3><p><strong>通用首部</strong>字段是指， 请求报文和响应报文双方都会使用的首部。</p>
 <ol>
 <li>Cache-Control：通过指定首部字段Cache-Control的指令，就能操作缓存的工作机制。</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727091630166.png" alt="image-20200727091630166"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727091630166.png" alt="image-20200727091630166"></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Cache-Control: private, max-age=<span class="number">0</span>, no-cache</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727092035433.png" alt="image-20200727092035433"></p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727092050222.png" alt="image-20200727092050222"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727092035433.png" alt="image-20200727092035433"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727092050222.png" alt="image-20200727092050222"></p>
 <ol start="2">
 <li>Connection：</li>
 </ol>
 <ul>
 <li>控制不再转发给代理的首部字段</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727092349928.png" alt="image-20200727092349928"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727092349928.png" alt="image-20200727092349928"></p>
 <blockquote>
 <p>Connection: 不再转发的首部字段名</p>
 </blockquote>
 <ul>
 <li>管理持久连接</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727092826383.png" alt="image-20200727092826383"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727092826383.png" alt="image-20200727092826383"></p>
 <blockquote>
 <p>响应端使用Connection: close关闭连接</p>
 <p>HTTP/1.1 版本的默认连接都是持久连接。 为此， 客户端会在持久连接上连续发送请求。 当服务器端想明确断开连接时， 则指定Connection 首部字段的值为 Close。</p>
@@ -362,12 +365,12 @@
 <li>一种方式就是将通信加密。 HTTP 协议中没有加密机制， 但可以通过和 SSL（Secure Socket Layer， 安全套接层） 或TLS（Transport Layer Security， 安全层传输协议） 的组合使用，加密 HTTP 的通信内容。</li>
 <li>用 SSL建立安全通信线路之后， 就可以在这条线路上进行 HTTP通信了。 与 SSL组合使用的 HTTP 被称为 HTTPS（HTTPSecure， 超文本传输安全协议） 或 HTTP over SSL。</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727093722864.png" alt="image-20200727093722864"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727093722864.png" alt="image-20200727093722864"></p>
 <p><strong>内容加密：</strong></p>
 <p>还有一种将参与通信的内容本身加密的方式。 由于 HTTP 协议中没有加密机制， 那么就对 HTTP 协议传输的内容本身加密。 即把HTTP 报文里所含的内容进行加密处理。</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727093917511.png" alt="image-20200727093917511"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727093917511.png" alt="image-20200727093917511"></p>
 <h3 id="2-HTTP-加密-认证-完整性保护-HTTPS"><a href="#2-HTTP-加密-认证-完整性保护-HTTPS" class="headerlink" title="2.HTTP+ 加密 + 认证 + 完整性保护=HTTPS"></a>2.HTTP+ 加密 + 认证 + 完整性保护=HTTPS</h3><p>HTTPS 并非是应用层的一种新协议。 只是 HTTP 通信接口部分用SSL（Secure Socket Layer） 和TLS（Transport Layer Security） 协议代替而已。 </p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727094202374.png" alt="image-20200727094202374"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727094202374.png" alt="image-20200727094202374"></p>
 <ol>
 <li>使用两把密钥的公开密钥加密</li>
 </ol>
@@ -377,7 +380,7 @@
 <li>使用公开密钥加密方式， 发送密文的一方使用对方的公开密钥进行加密处理， 对方收到被加密的信息后， 再使用自己的私有密钥进行解密。</li>
 <li>利用这种方式， 不需要发送用来解密的私有密钥， 也不必担心密钥被攻击者窃听而盗走。</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727094528425.png" alt="image-20200727094528425"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727094528425.png" alt="image-20200727094528425"></p>
 <ol start="2">
 <li>HTTPS 采用混合加密机制</li>
 </ol>
@@ -390,8 +393,23 @@
 <li>FormBase认证（基于表单的认证）</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>网络协议</category>
+      </categories>
       <tags>
         <tag>http</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小科技</title>
+    <url>/2020/09/20/science/</url>
+    <content><![CDATA[<p><img data-src="G:\myblog\public\images\bg.jpg" alt="img"></p>
+]]></content>
+      <categories>
+        <category>小黑洞</category>
+      </categories>
+      <tags>
+        <tag>science</tag>
       </tags>
   </entry>
   <entry>
@@ -401,6 +419,9 @@
 <a id="more"></a>
 <p>m<br>hs<br>nsn</p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
       </tags>
@@ -434,11 +455,11 @@
 <li>渲染引擎：他是浏览器的内核，他决定了浏览器如何显示网页的内容以及页面的格式信息。这也是浏览器兼容问题的根源。</li>
 <li>浏览和服务器的交互</li>
 </ol>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps8143.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps8143.tmp.jpg" alt="img"></p>
 <ol start="3">
 <li>url地址</li>
 </ol>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsD623.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsD623.tmp.jpg" alt="img"></p>
 <h3 id="1-4认识html"><a href="#1-4认识html" class="headerlink" title="1.4认识html"></a>1.4认识html</h3><ol>
 <li>他是超文本标记语言（Hypertextmarkuplanguage）—超链接</li>
 <li>html基本结构</li>
@@ -487,12 +508,12 @@
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 定义音频内容 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;horse.ogg&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/ogg&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;ceshi.mp3&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/mpeg&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">&quot;mycanvas&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 标记一个内联框架 --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 如果指定了空字符串（sandbox=&quot;&quot;），该属性对呈现在iframe框架中的内容启用一些额外的限制条件。 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">iframe</span> <span class="attr">style</span>=<span class="string">&quot;width: 400px;height: 400px;&quot;</span> <span class="attr">sandbox</span>=<span class="string">&quot;&quot;</span> <span class="attr">src</span>=<span class="string">&quot;http://www.baidu.com&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 根据屏幕匹配的不同尺寸显示不同图片，如果没有匹配到或浏览器不支持 picture 属性则使用 img 元素： --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">source</span> <span class="attr">media</span>=<span class="string">&quot;(min-width: 650px)&quot;</span> <span class="attr">srcset</span>=<span class="string">&quot;demo1.jpg&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">source</span> <span class="attr">media</span>=<span class="string">&quot;(min-width: 465px)&quot;</span> <span class="attr">srcset</span>=<span class="string">&quot;demo2.jpg&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img_girl.jpg&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">picture</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 标记下载进度 --&gt;</span></span><br><span class="line">        下载进度：<span class="tag">&lt;<span class="name">progress</span> <span class="attr">value</span>=<span class="string">&quot;22&quot;</span> <span class="attr">max</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">progress</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- mark部分文字高亮显示 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>Do not forget to buy <span class="tag">&lt;<span class="name">mark</span>&gt;</span>milk<span class="tag">&lt;/<span class="name">mark</span>&gt;</span> today.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- pre保留输入文本的样式，包含空格，换行 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">            此例演示如何使用 pre 标签</span><br><span class="line">            对空行和    空格</span><br><span class="line">            进行控制</span><br><span class="line">        <span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- &lt;ruby&gt; 元素由一个或多个需要解释/发音的字符和一个提供该信息的 &lt;rt&gt; 元素组成，还包括可选的 &lt;rp&gt; 元素，定义当浏览器不支持 &quot;ruby&quot; 元素时显示的内容。 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ruby</span>&gt;</span></span><br><span class="line">            汉 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>(<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span>Han<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>)<span class="tag">&lt;/<span class="name">rp</span>&gt;</span></span><br><span class="line">            字 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>(<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span>zi<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>)<span class="tag">&lt;/<span class="name">rp</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- &lt;s&gt; 标记不再正确的文本 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">s</span>&gt;</span>My car is blue.<span class="tag">&lt;/<span class="name">s</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>My new car is silver.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- &lt;section&gt; 标签定义了文档的某个区域。比如章节、头部、底部或者文档的其他区域 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">h1</span>&gt;</span>WWF<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span>&gt;</span>The World Wide Fund for Nature (WWF) is....<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 文本中字体的样式 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>这是正常状态下的文字<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">del</span>&gt;</span>删除线标签<span class="tag">&lt;/<span class="name">del</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">em</span>&gt;</span>强调文本<span class="tag">&lt;/<span class="name">em</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">strong</span>&gt;</span>加粗文本<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dfn</span>&gt;</span>定义项目<span class="tag">&lt;/<span class="name">dfn</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>一段电脑代码Do not forget to buy <span class="tag">&lt;<span class="name">mark</span>&gt;</span>milk<span class="tag">&lt;/<span class="name">mark</span>&gt;</span> today.<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">samp</span>&gt;</span>计算机样本<span class="tag">&lt;/<span class="name">samp</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">kbd</span>&gt;</span>键盘输入<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">var</span>&gt;</span>变量int=12<span class="tag">&lt;/<span class="name">var</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>3<span class="tag">&lt;<span class="name">sup</span>&gt;</span>2<span class="tag">&lt;/<span class="name">sup</span>&gt;</span>上标<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>4<span class="tag">&lt;<span class="name">sub</span>&gt;</span>2<span class="tag">&lt;/<span class="name">sub</span>&gt;</span>下标<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 时间标签 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>我们在每天早上 <span class="tag">&lt;<span class="name">time</span>&gt;</span>9:00<span class="tag">&lt;/<span class="name">time</span>&gt;</span> 开始营业。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>我在 <span class="tag">&lt;<span class="name">time</span> <span class="attr">datetime</span>=<span class="string">&quot;2016-02-14&quot;</span>&gt;</span>情人节<span class="tag">&lt;/<span class="name">time</span>&gt;</span> 有个约会。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;mycanvas&#x27;</span>)</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> ctx = canvas.getContext(<span class="string">&#x27;2d&#x27;</span>)</span></span><br><span class="line"><span class="javascript">        ctx.fillStyle = <span class="string">&#x27;#FF0000&#x27;</span>;</span></span><br><span class="line">        ctx.fillRect(0, 0, 80, 100);</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>滚动</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps78E2.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps78E2.tmp.jpg" alt="img"></p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">behavior</span>=<span class="string">&quot;scroll&quot;</span> <span class="attr">direction</span>=<span class="string">&quot;right&quot;</span> <span class="attr">loop</span>=<span class="string">&quot;5&quot;</span>&gt;</span>我是最凉的仔<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="1-5超链接"><a href="#1-5超链接" class="headerlink" title="1.5超链接"></a>1.5超链接</h3><p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps26A9.tmp.jpg" alt="img"></p>
+<h3 id="1-5超链接"><a href="#1-5超链接" class="headerlink" title="1.5超链接"></a>1.5超链接</h3><p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps26A9.tmp.jpg" alt="img"></p>
 <ul>
 <li>href  去往的路径（跳转的页面） 必写属</li>
 <li>title  提示文本  鼠标放到链接上显示的文字</li>
@@ -563,7 +584,7 @@
 <li>oninput 用户输入内容时触发，可用于移动端输入字数统计</li>
 <li>oninvalid 验证不通过时触发</li>
 </ul>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps5FFA.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps5FFA.tmp.jpg" alt="img"></p>
 <ul>
 <li>onselect      当选取元素时运行脚本</li>
 <li>onsubmit     当提交表单时运行脚本</li>
@@ -576,7 +597,7 @@
 </ol>
 <h3 id="1-7多媒体"><a href="#1-7多媒体" class="headerlink" title="1.7多媒体"></a>1.7多媒体</h3><h4 id="1-7-1音频"><a href="#1-7-1音频" class="headerlink" title="1.7.1音频"></a>1.7.1音频</h4><p>HTML5通过<audio>标签来解决音频播放的问题。</p>
 <p>使用相当简单，如下图所示</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps8324.tmp.jpg" alt="img"> </p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps8324.tmp.jpg" alt="img"> </p>
 <p>并且可以通过附加属性可以更友好控制音频的播放，如：</p>
 <ul>
 <li><p>autoplay 自动播放</p>
@@ -589,13 +610,13 @@
 </li>
 </ul>
 <blockquote>
-<p>由于版权等原因，不同的浏览器可支持播放的格式是不一样的<img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps471.tmp.jpg" alt="img"></p>
+<p>由于版权等原因，不同的浏览器可支持播放的格式是不一样的<img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps471.tmp.jpg" alt="img"></p>
 </blockquote>
 <p><strong><em>\</em>多浏览器支持的方案**</strong></p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps37C1.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps37C1.tmp.jpg" alt="img"></p>
 <h4 id="1-7-2视频"><a href="#1-7-2视频" class="headerlink" title="1.7.2视频"></a>1.7.2视频</h4><p>HTML5通过<video>标签来解决音频播放的问题。</p>
 <p>同音频播放一样，<video>使用也相当简单，如下图</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsF61.tmp.jpg" alt="img"> </p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsF61.tmp.jpg" alt="img"> </p>
 <p>同样，通过附加属性可以更友好的控制视频的播放</p>
 <ul>
 <li><p>autoplay 自动播放</p>
@@ -613,10 +634,10 @@
 </ul>
 <blockquote>
 <p>由于版权等原因，不同的浏览器可支持播放的格式是不一样的</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsF62.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsF62.tmp.jpg" alt="img"></p>
 </blockquote>
 <p><strong><em>\</em>多浏览器支持的方案**</strong></p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsAC10.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsAC10.tmp.jpg" alt="img"></p>
 <h3 id="1-8表格"><a href="#1-8表格" class="headerlink" title="1.8表格"></a>1.8表格</h3><h4 id="1-8-1属性"><a href="#1-8-1属性" class="headerlink" title="1.8.1属性"></a>1.8.1属性</h4><ul>
 <li>边框 border=”1” </li>
 <li>宽度 width=”500”</li>
@@ -736,8 +757,11 @@
 </ol>
 <h3 id="介绍一下你对浏览器内核的理解"><a href="#介绍一下你对浏览器内核的理解" class="headerlink" title="介绍一下你对浏览器内核的理解"></a>介绍一下你对浏览器内核的理解</h3><p>​     主要分成两部分：渲染引擎和JS引擎<br>​     渲染引擎：负责取得网页的内容（HTML，XML，图像等等），整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或者打印机。浏览器的内核的不同对于网页的语法解释会有不同 ，所以渲染的效果也会不同。所有网页浏览器，电子邮件客户端以及其它需要编辑，显示网络内容的应用程序都需要内核。<br>​      JS引擎：解析和执行JS来实现网页的动态效果。<br>​     最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。</p>
 ]]></content>
+      <categories>
+        <category>前端基础</category>
+      </categories>
       <tags>
-        <tag>html</tag>
+        <tag>html5</tag>
       </tags>
   </entry>
   <entry>
@@ -746,7 +770,7 @@
     <content><![CDATA[<h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1.概述"></a>1.概述</h3><blockquote>
 <p>Web 程序最初的目的就是将信息（数据）放到公共的服务器，让所有网络用户都可以通过浏览器访问。  </p>
 </blockquote>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200720144300013.png" alt="image-20200720144300013"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200720144300013.png" alt="image-20200720144300013"></p>
 <p>A JAX（Asynchronous JavaScript and XML），最早出现在 2005 年的 Google Suggest，是在浏览器端进行网络编程（发送请求、接收响应）的技术方案，它使我们可以通过 JavaScript 直接获取服务端最新的内容而不必重新加载页面。让 Web 更能接近桌面应用的用户体验。</p>
 <a id="more"></a>
 <blockquote>
@@ -756,7 +780,7 @@
 <blockquote>
 <p>能力不够API凑</p>
 </blockquote>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200720155220237.png" alt="image-20200720155220237" style="zoom:200%;" />
+<img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200720155220237.png" alt="image-20200720155220237" style="zoom:200%;" />
 
 
 
@@ -803,7 +827,7 @@
 </tr>
 </tbody></table>
 <p><strong>时间轴</strong></p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200720160545591.png" alt="image-20200720160545591"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200720160545591.png" alt="image-20200720160545591"></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">switch</span>(xhr.readyState)&#123;</span><br><span class="line">     <span class="keyword">case</span> <span class="number">1</span>:<span class="comment">//OPENED</span></span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">           <span class="keyword">break</span>;</span><br><span class="line">     <span class="keyword">case</span> <span class="number">2</span>:<span class="comment">//HEADERS_RECEIVED</span></span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">       <span class="keyword">break</span>;</span><br><span class="line">     <span class="keyword">case</span> <span class="number">3</span>:<span class="comment">//LOADING</span></span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">       <span class="keyword">break</span>;</span><br><span class="line">     <span class="keyword">case</span> <span class="number">4</span>:<span class="comment">//DONE</span></span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">       <span class="keyword">break</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>通过理解每一个状态值的含义得出一个结论：一般我们都是在 readyState 值为 4 时，执行响应的后续逻辑。  </p>
@@ -1285,6 +1309,9 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;zheshi第二个页面&lt;/h1&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="comment">/* 接收数据 */</span></span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">&#x27;message&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> message = <span class="built_in">JSON</span>.parse(e.data);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;b已经接收到了数据&#x27;</span>+message.name)</span><br><span class="line">        <span class="keyword">if</span>(message) &#123;</span><br><span class="line">            message.name=<span class="string">&#x27;ljkjkjk&#x27;</span>;</span><br><span class="line">            <span class="built_in">window</span>.parent.postMessage(<span class="built_in">JSON</span>.stringify(message),<span class="string">&#x27;http://localhost:8081&#x27;</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,<span class="literal">false</span>)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>数据交互</category>
+      </categories>
       <tags>
         <tag>ajax</tag>
       </tags>
@@ -1518,7 +1545,7 @@
 <h4 id="index方法"><a href="#index方法" class="headerlink" title="index方法"></a>index方法</h4><p><strong>作用</strong>：获取元素下标（注意：它是一个方法，要加()）</p>
 <p><strong>返回值为</strong>：当前元素所在的所有兄弟元素里面的索引。</p>
 <h3 id="区分jQuery和JavaScript"><a href="#区分jQuery和JavaScript" class="headerlink" title="区分jQuery和JavaScript"></a>区分jQuery和JavaScript</h3><p>JavaScript是一门编程语言，jquery是用JavaScript实现的一个JavaScript库，目的是简化我们的开发。（联想记忆：不能扛着洗衣机去出差）</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps7EE9.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps7EE9.tmp.jpg" alt="img"></p>
 <h3 id="css操作"><a href="#css操作" class="headerlink" title="css操作"></a>css操作</h3><p>功能：设置或者修改样式，操作的是style属性。</p>
 <ul>
 <li>设置单个样式</li>
@@ -1830,6 +1857,9 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//在jQuery中，jquery.prototype === $.fn</span></span><br><span class="line"><span class="comment">//通过给$.fn添加方法就能够扩展jquery对象</span></span><br><span class="line">$.fn.pluginName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>js库</category>
+      </categories>
       <tags>
         <tag>jQuery</tag>
       </tags>
@@ -1988,7 +2018,7 @@
 <li>写字体的英文名称。 <code>microsoft yahei</code></li>
 <li><code>unicode</code>编码</li>
 </ol>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsAA02.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsAA02.tmp.jpg" alt="img"></p>
 <h3 id="4-4文字折行"><a href="#4-4文字折行" class="headerlink" title="4.4文字折行"></a>4.4文字折行</h3><p>在一行显示不下的情况需要换行。</p>
 <ul>
 <li>overflow-wrap（word-wrap）通用换行控制<ul>
@@ -2132,7 +2162,7 @@
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* background-origin: border-box;   以边框为原点开始计算 background-position.</span><br><span class="line"></span><br><span class="line">* background-origin: padding-box;  以内补白为原点开始计算 background-position</span><br><span class="line"></span><br><span class="line">* background-origin: content-box;  以内容盒子为原点开始计算 background-position</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618214329332.png" alt="image-20200618214329332"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618214329332.png" alt="image-20200618214329332"></p>
 <ol start="10">
 <li><p>新属性：(background-break)，CSS3 中，元素可以被分成几个独立的盒子(例如 使内联元素 span 跨越多行)。background-break 属性用来控制背景怎样在这些不同的盒子中显示。</p>
 <ul>
@@ -2173,7 +2203,7 @@
 <p>​      如果当我们定义一个容器的 box-sizing 属性为 border-box 时（表达式：*<em>br{box-sizing:border-box}**），那么我们创建一个和上段中相同设置的 <div> 容器时，那么他的最终宽度即为 100px, 那么它的内容部分（content）的有效宽度变成了 **100px-2\</em>10px-2*10px =60px; 所以你会得到一个你预期大小的盒子容器，但是只是被压缩了内容部分尺寸而已，但是对于整体布局而言益处颇多。</p>
 <h2 id="8-边框"><a href="#8-边框" class="headerlink" title="8.边框"></a>8.边框</h2><h3 id="1-边框圆角"><a href="#1-边框圆角" class="headerlink" title="1.边框圆角"></a>1.边框圆角</h3><p>border-radius</p>
 <p>圆角处理时，脑中要形成圆、圆心、横轴、纵轴的概念，正圆是椭圆的一种特殊情况。如下图</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsBBF5.tmp.jpg" alt="img"> </p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsBBF5.tmp.jpg" alt="img"> </p>
 <p>为了方便表述，我们将四个角标记成1、2、3、4，如2代表右上角，CSS里提供了border-radius来设置这些角横纵轴半径值。</p>
 <p>支持简写模式，具体如下：</p>
 <p>1、border-radius: 10px; 表示四个角的横纵轴半径都为10px；</p>
@@ -2192,12 +2222,12 @@
 </blockquote>
 <h3 id="3-边框图片"><a href="#3-边框图片" class="headerlink" title="3.边框图片"></a>3.边框图片</h3><p>border-image</p>
 <p>设置的图片将会被“切割”成九宫格形式，然后进行设置。如下图</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9E89.tmp.jpg" alt="img"> </p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9E89.tmp.jpg" alt="img"> </p>
 <p>最少“4刀”便可以将一个图片切成9部分，“切割”完成后生成虚拟的9块图形，如下图</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9E8A.tmp.jpg" alt="img"> </p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9E8A.tmp.jpg" alt="img"> </p>
 <p>这时我们将一个盒子想象是由9部分组成的，分别是左上角、上边框、右上角、右边框、右下角、下边框、左下角、左边框、中间，那么浏览器会将切割好的9张虚拟图片分别对应到盒子的各个部分上。</p>
 <p>其中四个角位置、形状保持不变，中心位置水平垂直两个方向平铺或拉伸，如下图</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9E8B.tmp.jpg" alt="img"> </p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9E8B.tmp.jpg" alt="img"> </p>
 <ol>
 <li><p>border-image-source 指定图片路径</p>
 </li>
@@ -2208,11 +2238,11 @@
 <li><p>round会自动调整尺寸，完整显示边框图片</p>
 </li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618221458873.png" alt="image-20200618221458873"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618221458873.png" alt="image-20200618221458873"></p>
 <ul>
 <li>repeat 单纯平铺,多余部分，会被“裁切”而不能完整显示。</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618221511889.png" alt="image-20200618221511889"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618221511889.png" alt="image-20200618221511889"></p>
 </li>
 <li><p>border-image-slice 图像边界向内偏移</p>
 </li>
@@ -2224,10 +2254,10 @@
 <li>solid  实线   dotted 点线    dashed 虚线</li>
 <li>获取焦点</li>
 </ol>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsED60.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsED60.tmp.jpg" alt="img"></p>
 <h2 id="9-渐变"><a href="#9-渐变" class="headerlink" title="9.渐变"></a>9.渐变</h2><p>渐变是CSS3当中比较丰富多彩的一个特性，通过渐变我们可以实现许多炫丽的效果，有效的减少图片的使用数量，并且具有很强的适应性和可扩展性。</p>
 <h3 id="1-线性渐变（函数）"><a href="#1-线性渐变（函数）" class="headerlink" title="1.线性渐变（函数）"></a>1.线性渐变（函数）</h3><p>linear-gradient线性渐变指沿着某条直线朝一个方向产生渐变效果，如下图是从黄色渐变到绿色。</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618223700061.png" alt="image-20200618223700061"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618223700061.png" alt="image-20200618223700061"></p>
 <p>语法：background-image: linear-gradient(direction, color-stop1, color-stop2, …);</p>
 <ol>
 <li><p>必要的元素：方向、起始色、终止色、渐变距离</p>
@@ -2237,15 +2267,15 @@
 <li>用关键字如to top、to right</li>
 <li>用角度（正负值均可）如45deg、-90deg，当以角度做为参数时，可参照下图来使用，0deg从下往上，90deg从左向右，进而可以推算出180deg从上向下。</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618224134204.png" alt="image-20200618224134204"></p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619101832677.png" alt="image-20200619101832677"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618224134204.png" alt="image-20200618224134204"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619101832677.png" alt="image-20200619101832677"></p>
 </li>
 </ol>
 <blockquote>
 <p>注：我们可以设置渐变的起始点，这个起始点的值可以是百分比形式，这个百分比在没有设置background-size时，是相对于盒子大小的，当设置了background-size时则是相对于background-size的。</p>
 </blockquote>
 <h3 id="2-径向渐变（函数）"><a href="#2-径向渐变（函数）" class="headerlink" title="2.径向渐变（函数）"></a>2.径向渐变（函数）</h3><p>radial-gradient径向渐变指从一个中心点开始沿着四周产生渐变效果</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618224239218.png" alt="image-20200618224239218"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200618224239218.png" alt="image-20200618224239218"></p>
 <p>语法：background-image: radial-gradient(shape size at position, start-color, …, last-color);</p>
 <p><strong><em>\</em>1、必要的元素：**</strong></p>
 <p>a) 辐射范围即圆半径 </p>
@@ -2343,7 +2373,7 @@
 <h3 id="2-脱离文档流"><a href="#2-脱离文档流" class="headerlink" title="2.脱离文档流"></a>2.脱离文档流</h3><p>脱离文档流即是元素打乱了这个排列，或是从排版中拿走。</p>
 <p>让元素脱离文档流的方法有：浮动和定位。</p>
 <h3 id="3-默认定位-static"><a href="#3-默认定位-static" class="headerlink" title="3.默认定位(static)"></a>3.默认定位(static)</h3><p>static：<strong>默认值</strong>。即没有定位，元素在正常的流中，<strong>top，right，bottom，left 和 z‐index 属性无效</strong>。</p>
-<p><img src="C:\Users\Administrator\Desktop\20190605201837915.png" alt="20190605201837915"></p>
+<p><img data-src="C:\Users\Administrator\Desktop\20190605201837915.png" alt="20190605201837915"></p>
 <h3 id="4-相对定位-relative"><a href="#4-相对定位-relative" class="headerlink" title="4.相对定位(relative)"></a>4.相对定位(relative)</h3><p>relative：生成相对定位的元素，通过 top，bottom，left，right 的位置相对于其正常位置进行定位。其中的相对指的是相对于元素在默认流中的位置。</p>
 <ol>
 <li>将元素 position 属性设置为 relative 之后，再通过 top，bottom，left，right 属性对其进行相对于原来位置的偏移；</li>
@@ -2388,13 +2418,13 @@
 </ol>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.container</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">width</span>: 200<span class="selector-tag">px</span>;<span class="comment">/*不设置高度*/</span></span></span><br><span class="line">            border: 1px solid black;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-class">.box1</span> &#123;</span></span><br><span class="line">            width: 50px;</span><br><span class="line">            height: 50px;</span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#666</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-class">.box2</span> &#123;</span></span><br><span class="line">            width: 50px;</span><br><span class="line">            height: 50px;</span><br><span class="line">            background-color: red;</span><br><span class="line">            position: relative;</span><br><span class="line">            top: 70px;</span><br><span class="line">            left: 60px;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-class">.box3</span> &#123;</span></span><br><span class="line">            width: 50px;</span><br><span class="line">            height: 50px;</span><br><span class="line">            background-color: yellow;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box3&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619174325663.png" alt="image-20200619174325663"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619174325663.png" alt="image-20200619174325663"></p>
 <ol start="3">
 <li>如果使用绝对定位，那么元素会脱离文档流，父元素在计算高度的时候，会好像绝对定位的子元素不存在一样。</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*修改上面的部分代码*&#x2F;</span><br><span class="line">.box2 &#123;</span><br><span class="line">            width: 50px;</span><br><span class="line">            height: 50px;</span><br><span class="line">            background-color: red;</span><br><span class="line">            position: absolute;</span><br><span class="line">            top: 70px;</span><br><span class="line">            left: 60px;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619174610083.png" alt="image-20200619174610083"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619174610083.png" alt="image-20200619174610083"></p>
 <ol start="4">
 <li>对于固定定位的情况，结果和绝对定位一致</li>
 </ol>
@@ -2407,8 +2437,8 @@
 <li>如果当父元素设置为绝对定位之后，其宽度将由其中最大的元素的宽度决定。</li>
 <li>如果相互嵌套的几层父子元素都设置绝对定位，那么里层的元素会脱离文档流，从而无法支撑起外层元素的宽度。</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619180114603.png" alt="image-20200619180114603"></p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619175937797.png" alt="image-20200619175937797"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619180114603.png" alt="image-20200619180114603"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200619175937797.png" alt="image-20200619175937797"></p>
 </li>
 </ol>
 <h2 id="13-垂直水平居中"><a href="#13-垂直水平居中" class="headerlink" title="13.垂直水平居中"></a>13.垂直水平居中</h2><h3 id="1-宽高固定的时候"><a href="#1-宽高固定的时候" class="headerlink" title="1.宽高固定的时候"></a>1.宽高固定的时候</h3><ol>
@@ -2460,9 +2490,9 @@
 <p>我们可以同时使用多个转换，其格式为：transform: translate() rotate() scale() …等，其顺序会影响转换的效果。</p>
 </blockquote>
 <h2 id="15-3D"><a href="#15-3D" class="headerlink" title="15.3D"></a>15.3D</h2><h3 id="1-左手坐标系"><a href="#1-左手坐标系" class="headerlink" title="1.左手坐标系"></a>1.左手坐标系</h3><p>伸出左手，让拇指和食指成“L”形，大拇指向右，食指向上，中指指向前方。这样我们就建立了一个左手坐标系，拇指、食指和中指分别代表X、Y、Z轴的正方向。如下图</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsC0E2.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsC0E2.tmp.jpg" alt="img"></p>
 <h3 id="2-CSS中的3D坐标系"><a href="#2-CSS中的3D坐标系" class="headerlink" title="2.CSS中的3D坐标系"></a>2.CSS中的3D坐标系</h3><p>CSS3中的3D坐标系与上述的3D坐标系是有一定区别的，相当于其绕着X轴旋转了180度，如下图</p>
-<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsD34D.tmp.jpg" alt="img"></p>
+<p><img data-src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsD34D.tmp.jpg" alt="img"></p>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">transform: rotate(deg)  //旋转</span><br><span class="line">transform: translateX()  //x移动</span><br><span class="line">transform: skew()    //倾斜</span><br><span class="line">transform:scale(x,y)  //缩放 可为小数，不加px</span><br></pre></td></tr></table></figure>
 
 <h3 id="3-透视"><a href="#3-透视" class="headerlink" title="3.透视"></a>3.透视</h3><p>电脑显示屏是一个2D平面，图像之所以具有立体感（3D效果），其实只是一种视觉呈现，通过透视可以实现此目的。</p>
@@ -2473,7 +2503,7 @@
 <li>perspective的值，设置的是用户眼睛距离平面的距离，距离最小显示的越大，越大则越小。</li>
 <li>透视效果只是视觉上的呈现，并不是真正的3d</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200620165318359.png" alt="image-20200620165318359"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200620165318359.png" alt="image-20200620165318359"></p>
 <p>​                                                                  透视会产生“近大远小”的效果。</p>
 <blockquote>
 <p><strong>注：并非任何情况下需要透视效果，根据开发需要进行设置。\</strong></p>
@@ -2534,7 +2564,7 @@
 <blockquote>
 <p>主轴和侧轴并不是固定不变的，通过flex-direction可以互换。</p>
 </blockquote>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200620183853643.png" alt="image-20200620183853643"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200620183853643.png" alt="image-20200620183853643"></p>
 <ol>
 <li><p><strong>必要元素</strong></p>
 <ul>
@@ -2947,7 +2977,7 @@
 
 <h4 id="cssnext"><a href="#cssnext" class="headerlink" title="cssnext"></a><a href="https://cssnext.github.io/features/">cssnext</a></h4><p>cssnext是一个CSS发起者，它允许您在当前站点上使用未来的CSS语法。W3C有许多新的CSS规则，这些规则目前没有被浏览器实现，但可以使开发人员更快、更容易地编写更复杂的CSS。cssnext是用来弥补这个缺口的。</p>
 <p>值得一看它的特性，看看你能用它完成什么，例如你可以在你的设计中使用自定义媒体查询、自定义选择器、颜色修改器、SVG过滤器和新的伪类。</p>
-<p><img src="C:\Users\Administrator\Desktop\html+css高配版\20190327164411661.jpg"></p>
+<p><img data-src="C:\Users\Administrator\Desktop\html+css高配版\20190327164411661.jpg"></p>
 <p>安装：<code>npm install postcss-cssnext</code></p>
 <h4 id="precss"><a href="#precss" class="headerlink" title="precss"></a><a href="https://github.com/jonathantneal/precss">precss</a></h4><p>与scss几乎一样</p>
 <ul>
@@ -3289,6 +3319,9 @@
 <li></li>
 </ol>
 ]]></content>
+      <categories>
+        <category>前端基础</category>
+      </categories>
       <tags>
         <tag>css</tag>
       </tags>
@@ -3306,7 +3339,7 @@
 <p>彻底学会Webpack的配置<br>理解 Webpack的作用及原理<br>上手项目的打包过程配置<br>拥有工程化的前端思维<br>步入高级前端工程师行列</p>
 </blockquote>
 <h2 id="一：初识Webpack"><a href="#一：初识Webpack" class="headerlink" title="一：初识Webpack"></a>一：初识Webpack</h2><p>官网图镇楼：</p>
-<p><img src="./readmeimages/%E5%AE%98%E7%BD%91%E5%9B%BE.jpg"></p>
+<p><img data-src="./readmeimages/%E5%AE%98%E7%BD%91%E5%9B%BE.jpg"></p>
 <h3 id="1-1-什么是WebPack"><a href="#1-1-什么是WebPack" class="headerlink" title="1. 1 什么是WebPack"></a>1. 1 什么是WebPack</h3><p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的<em>静态模块打包工具</em>：它做的事情是，分析你的项目结构，找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（Scss，TypeScript等），并生成一个或多个 <em>bundle</em>，将其打包为合适的格式以供浏览器使用。</p>
 <p><strong>webpack构建：</strong></p>
 <blockquote>
@@ -3623,7 +3656,7 @@
 <p>详细请看官方文档：<a href="https://webpack.js.org/guides/code-splitting/#bundle-analysis">bundle-analysis 打包分析工具</a> </p>
 <h4 id="介绍-webpack-bundle-analyzer-的使用："><a href="#介绍-webpack-bundle-analyzer-的使用：" class="headerlink" title="介绍 webpack-bundle-analyzer 的使用："></a><strong>介绍 <a href="https://github.com/webpack-contrib/webpack-bundle-analyzer">webpack-bundle-analyzer</a> 的使用：</strong></h4><p>通过使用<a href="https://www.npmjs.com/package/webpack-bundle-analyzer">webpack-bundle-analyzer</a>可以看到项目各模块的大小，可以按需优化。</p>
 <p>官网图镇楼：</p>
-<p><img src="https://cloud.githubusercontent.com/assets/302213/20628702/93f72404-b338-11e6-92d4-9a365550a701.gif"></p>
+<p><img data-src="https://cloud.githubusercontent.com/assets/302213/20628702/93f72404-b338-11e6-92d4-9a365550a701.gif"></p>
 <p>安装：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># NPM</span></span><br><span class="line">npm install --save-dev webpack-bundle-analyzer</span><br><span class="line"><span class="comment"># Yarn</span></span><br><span class="line">yarn add -D webpack-bundle-analyzer</span><br></pre></td></tr></table></figure>
 
@@ -3922,6 +3955,9 @@
 <h3 id="Vue-Cli-3-0"><a href="#Vue-Cli-3-0" class="headerlink" title="Vue-Cli 3.0"></a>Vue-Cli 3.0</h3><p>仓库源码 【<a href="https://github.com/wudiufo/WebPack4-study/tree/master/my-project57">57</a>】</p>
 <p>详细请看官网：<a href="https://cli.vuejs.org/zh/guide/#cli">VUE Cli</a>  <a href="https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE">全局-cli-配置</a></p>
 ]]></content>
+      <categories>
+        <category>前端工具</category>
+      </categories>
       <tags>
         <tag>webpack4.0</tag>
       </tags>
@@ -4024,8 +4060,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="5-ip地址和端口号"><a href="#5-ip地址和端口号" class="headerlink" title="5.ip地址和端口号"></a>5.ip地址和端口号</h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200729181121523.png" alt="image-20200729181121523"></p>
-<h3 id="6-服务器黑盒子"><a href="#6-服务器黑盒子" class="headerlink" title="6.服务器黑盒子"></a>6.服务器黑盒子</h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200729181209875.png" alt="image-20200729181209875"></p>
+<h3 id="5-ip地址和端口号"><a href="#5-ip地址和端口号" class="headerlink" title="5.ip地址和端口号"></a>5.ip地址和端口号</h3><p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200729181121523.png" alt="image-20200729181121523"></p>
+<h3 id="6-服务器黑盒子"><a href="#6-服务器黑盒子" class="headerlink" title="6.服务器黑盒子"></a>6.服务器黑盒子</h3><p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200729181209875.png" alt="image-20200729181209875"></p>
 <h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><h3 id="1-什么是模块化"><a href="#1-什么是模块化" class="headerlink" title="1.什么是模块化"></a>1.什么是模块化</h3><ol>
 <li>模块化是指解决一个复杂问题时，自顶向下逐层把系统划分成若干模块的过程。对于整个系统来说，模块是可组合、分解和更换的单元</li>
 <li>编程领域中的模块化，就是遵守固定的规则，把一个大文件拆成独立并互相依赖的多个小模块</li>
@@ -4628,7 +4664,7 @@
 </ul>
 <p>Koa中间件的执行顺序：</p>
 <p><a href="https://www.itying.com/koa/data/news/image/20180406/20180406134220_35560.png">https://www.itying.com/koa/data/news/image/20180406/20180406134220_35560.png</a></p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200816105004618.png" alt="image-20200816105004618"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200816105004618.png" alt="image-20200816105004618"></p>
 <h3 id="3-get请求"><a href="#3-get请求" class="headerlink" title="3.get请求"></a>3.get请求</h3><blockquote>
 <p>获得GET请求的方式有两种，一种是从request中获得，一种是一直从上下文中获得。获得的格式也有两种：query和querystring。</p>
 </blockquote>
@@ -5128,12 +5164,12 @@
 <li>相比于mysql,访问速度快（内存的速度要远远高于硬盘的）</li>
 <li>但是成本高，可存储的数据量更小（内存的硬伤）</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200613170655276.png" alt="image-20200613170655276"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200613170655276.png" alt="image-20200613170655276"></p>
 <blockquote>
 <p>这里的redis好比数据库，就是将session,单独的存储在这里，解决了进程频繁访问，数据量增多给进程带来的问题，同时也解决了，多进程的问题，所有的进程都可以访问redis中的session</p>
 </blockquote>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200613171409575.png" alt="image-20200613171409575"></p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200613171546347.png" alt="image-20200613171546347"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200613171409575.png" alt="image-20200613171409575"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200613171546347.png" alt="image-20200613171546347"></p>
 <h3 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h3><ol>
 <li><p>安装：<a href="https://www.runoob.com/redis/redis-install.html">https://www.runoob.com/redis/redis-install.html</a></p>
 </li>
@@ -5174,26 +5210,26 @@
 <li>一般用于做静态服务，负载均衡，动静分离</li>
 <li>以及反向代理</li>
 </ul>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200614104017778.png" alt="image-20200614104017778"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200614104017778.png" alt="image-20200614104017778"></p>
 <ul>
 <li>下载：<a href="https://www.cnblogs.com/chen1005/p/10520812.html">https://www.cnblogs.com/chen1005/p/10520812.html</a></li>
 </ul>
 <h4 id="1-正向代理"><a href="#1-正向代理" class="headerlink" title="1.正向代理"></a>1.正向代理</h4><blockquote>
 <p>在浏览器中配置代理服务器，通过代理服务器访问局域网外的internet.</p>
 </blockquote>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200817111232641.png" alt="image-20200817111232641"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200817111232641.png" alt="image-20200817111232641"></p>
 <h4 id="2-反向代理"><a href="#2-反向代理" class="headerlink" title="2.反向代理"></a>2.反向代理</h4><blockquote>
 <p>我们只需要将请求发送到反向代理服务器，由反向代理服务器去选择目标服务器获取数据后，在返回给客户端，此时反向代理服务器和目标服务器对外就是一个服务器，暴露的是代理服务器地址，隐藏了真实服务器 IP 地址。</p>
 </blockquote>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200817112247843.png" alt="image-20200817112247843"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200817112247843.png" alt="image-20200817112247843"></p>
 <h4 id="3-负载均衡"><a href="#3-负载均衡" class="headerlink" title="3.负载均衡"></a>3.负载均衡</h4><blockquote>
 <p>单个服务器解决不了多重并发访问，我们可以通过增加服务器的数量，然后将请求分发到多个服务器上，<strong>将原来的请求集中到单个服务器上的情况改为将请求分发到多个服务器上</strong>，将负载分发到不同的服务器，也就是我们所说的负载均衡。</p>
 </blockquote>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200817113612376.png" alt="image-20200817113612376"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200817113612376.png" alt="image-20200817113612376"></p>
 <h4 id="4-动静分离"><a href="#4-动静分离" class="headerlink" title="4.动静分离"></a>4.动静分离</h4><blockquote>
 <p>为了加快网页的解析速度，可以把动态页面和静态页面由不同的服务器来解析，加快解析速度，降低原来单个服务器的压力。</p>
 </blockquote>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200817114558756.png" alt="image-20200817114558756"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200817114558756.png" alt="image-20200817114558756"></p>
 <ul>
 <li>在 nginx.conf中做配置</li>
 </ul>
@@ -5204,8 +5240,11 @@
 </ul>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">// nginx命令：启动nginx</span><br><span class="line">C:/nginx-0.8.53&gt;nginx.exe  或者</span><br><span class="line">C:/nginx-0.8.53&gt;start nginx</span><br><span class="line"></span><br><span class="line">// nginx命令：停止nginx的命令主要有两种，即</span><br><span class="line">C:/nginx-0.8.53&gt;nginx -s stop  或者</span><br><span class="line">C:/nginx-0.8.53&gt;nginx -s quit</span><br><span class="line">// nginx停止命令stop与quit参数的区别在于stop是快速停止nginx，可能并不保存相关信息，quit是完整有序的停止nginx，并保存相关信息。</span><br><span class="line"></span><br><span class="line">// 重载nginx命令</span><br><span class="line">nginx -s reopen</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200606110014073.png" alt="image-20200606110014073"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200606110014073.png" alt="image-20200606110014073"></p>
 ]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
       <tags>
         <tag>nodeJs</tag>
       </tags>
@@ -5458,15 +5497,15 @@
 <ol>
 <li>Number()</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200623154300455.png" alt="image-20200623154300455"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200623154300455.png" alt="image-20200623154300455"></p>
 <ol start="2">
 <li>parseInt()</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200623155743706.png" alt="image-20200623155743706"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200623155743706.png" alt="image-20200623155743706"></p>
 <ol start="3">
 <li>parseFloat()</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200623162117442.png" alt="image-20200623162117442"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200623162117442.png" alt="image-20200623162117442"></p>
 <ol start="4">
 <li>toFixed()　将一个数字转换为包含指定小数位数的字符串。</li>
 <li>valueOf()　　　　返回一个Number对象的原始值</li>
@@ -5915,7 +5954,7 @@
         &#125;)
     // alert(200) //同步有堵塞
     console.log(300)</code></pre>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200530195614893.png" alt="image-20200530195614893"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200530195614893.png" alt="image-20200530195614893"></p>
 <h3 id="异步编程"><a href="#异步编程" class="headerlink" title="异步编程"></a>异步编程</h3><h4 id="callbacks回调函数"><a href="#callbacks回调函数" class="headerlink" title="callbacks回调函数"></a>callbacks回调函数</h4><p>当我们把回调函数作为一个参数传递给另一个函数时，仅仅是把回调函数定义作为参数传递过去——回调函数并没有立刻执行，回调函数会在包含它的函数的某个地方异步执行，包含函数负责在合适的时候执行回调函数。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadAsset</span>(<span class="params">url, type, callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">  xhr.open(<span class="string">&#x27;GET&#x27;</span>, url);</span><br><span class="line">  xhr.responseType = type;</span><br><span class="line"></span><br><span class="line">  xhr.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    callback(xhr.response);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  xhr.send();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">displayImage</span>(<span class="params">blob</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> objectURL = URL.createObjectURL(blob);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> image = <span class="built_in">document</span>.createElement(<span class="string">&#x27;img&#x27;</span>);</span><br><span class="line">  image.src = objectURL;</span><br><span class="line">  <span class="built_in">document</span>.body.appendChild(image);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">loadAsset(<span class="string">&#x27;coffee.jpg&#x27;</span>, <span class="string">&#x27;blob&#x27;</span>, displayImage);</span><br></pre></td></tr></table></figure>
 
@@ -6169,7 +6208,7 @@
 <li><strong>设备API</strong></li>
 <li><strong>客户端存储API</strong>在Web浏览器中的使用变得越来越普遍 - 如果您想创建一个应用程序来保存页面加载之间的状态，甚至让设备在处于脱机状态时可用，那么在客户端存储数据将会是非常有用的。例如使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API">Web Storage API</a>的简单的键 - 值存储以及使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API">IndexedDB API</a>的更复杂的表格数据存储。</li>
 </ul>
-<h2 id="JavaScript的组成"><a href="#JavaScript的组成" class="headerlink" title="JavaScript的组成"></a>JavaScript的组成</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200701164451220.png" alt="image-20200701164451220"></p>
+<h2 id="JavaScript的组成"><a href="#JavaScript的组成" class="headerlink" title="JavaScript的组成"></a>JavaScript的组成</h2><p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200701164451220.png" alt="image-20200701164451220"></p>
 <h4 id="ECMAScript-JavaScript的核心"><a href="#ECMAScript-JavaScript的核心" class="headerlink" title="ECMAScript - JavaScript的核心"></a>ECMAScript - JavaScript的核心</h4><p>定义了javascript的语法规范</p>
 <p>JavaScript的核心，描述了语言的基本语法和数据类型，ECMAScript是一套标准，定义了一种语言的标准与具体实现无关</p>
 <h4 id="BOM-浏览器对象模型"><a href="#BOM-浏览器对象模型" class="headerlink" title="BOM - 浏览器对象模型"></a>BOM - 浏览器对象模型</h4><p>一套操作浏览器功能的API</p>
@@ -6694,7 +6733,7 @@
 <li>如果没有定位的元素，则 offsetParent 为最近的 table, table cell 或根元素</li>
 <li>当元素的 style.display 设置为 “none” 时，offsetParent 返回 null。</li>
 </ol>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200702194328105.png" alt="image-20200702194328105"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200702194328105.png" alt="image-20200702194328105"></p>
 <h3 id="scroll家族"><a href="#scroll家族" class="headerlink" title="scroll家族"></a>scroll家族</h3><blockquote>
 <p>scroll家族是用来获取盒子内容的大小和位置</p>
 <p>scroll 家族主要有 : scrollWidth、scrollHeight、scrollLeft、scrollTop</p>
@@ -6734,13 +6773,13 @@
 <p>页面被卷去的高度和宽度的兼容性封装</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 给整个页面注册滚动事件</span></span><br><span class="line"><span class="built_in">document</span>.onscroll = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> scrollTop = <span class="built_in">window</span>.pageYOffset || <span class="built_in">document</span>.documentElement.scrollTop || <span class="built_in">document</span>.body.scrollTop || <span class="number">0</span>;</span><br><span class="line"> <span class="keyword">var</span> scrollLeft = <span class="built_in">window</span>.pageXOffset || <span class="built_in">document</span>.documentElement.scrollLeft || <span class="built_in">document</span>.body.scrollLeft || <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200702200442330.png" alt="image-20200702200442330"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200702200442330.png" alt="image-20200702200442330"></p>
 <h3 id="client家族"><a href="#client家族" class="headerlink" title="client家族"></a>client家族</h3><blockquote>
 <p>client家族用于获取盒子可视区的大小</p>
 <p>client家族有clientWidth、clientHeight、clientLeft、clientTop</p>
 </blockquote>
 <p>clientWidth、clientHeight 可视区宽高</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200702200525000.png" alt="image-20200702200525000"></p>
+<p><img data-src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200702200525000.png" alt="image-20200702200525000"></p>
 <p><strong>场景 : client系列一般用来获取页面的可视区宽高</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 因为求的是窗口大小所以用window</span></span><br><span class="line"><span class="built_in">window</span>.onresize =  <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> W = <span class="built_in">window</span>.innerWidth || <span class="built_in">document</span>.documentElement.clientWidth || <span class="built_in">document</span>.body.clientWidth;</span><br><span class="line">    <span class="built_in">console</span>.log(W);</span><br><span class="line">    <span class="keyword">var</span> H = <span class="built_in">window</span>.innerHeight || <span class="built_in">document</span>.documentElement.clientHeight || <span class="built_in">document</span>.body.clientHeight;</span><br><span class="line">    <span class="built_in">console</span>.log(H);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -7792,7 +7831,7 @@
 <p>验证日期 2012-5-01</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">^\d&#123;<span class="number">4</span>&#125;-\d&#123;<span class="number">1</span>,<span class="number">2</span>&#125;-\d&#123;<span class="number">1</span>,<span class="number">2</span>&#125;$</span><br></pre></td></tr></table></figure>
 
-<p>验证邮箱 <a href="mailto:&#x78;&#x78;&#120;&#x40;&#105;&#x74;&#x63;&#x61;&#115;&#116;&#x2e;&#99;&#110;">&#x78;&#x78;&#120;&#x40;&#105;&#x74;&#x63;&#x61;&#115;&#116;&#x2e;&#99;&#110;</a>：</p>
+<p>验证邮箱 <a href="mailto:&#120;&#120;&#x78;&#64;&#x69;&#x74;&#99;&#x61;&#115;&#116;&#x2e;&#x63;&#110;">&#120;&#120;&#x78;&#64;&#x69;&#x74;&#99;&#x61;&#115;&#116;&#x2e;&#x63;&#110;</a>：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">^\w+@\w+\.\w+$</span><br></pre></td></tr></table></figure>
 
 <p>验证IP地址 192.168.1.10</p>
@@ -7855,6 +7894,9 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 所有的验证规则</span></span><br><span class="line"><span class="keyword">var</span> rules = [</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">&#x27;qq&#x27;</span>,</span><br><span class="line">    reg: <span class="regexp">/^\d&#123;5,12&#125;$/</span>,</span><br><span class="line">    tip: <span class="string">&quot;请输入正确的QQ&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">&#x27;email&#x27;</span>,</span><br><span class="line">    reg: <span class="regexp">/^\w+@\w+\.\w+(\.\w+)?$/</span>,</span><br><span class="line">    tip: <span class="string">&quot;请输入正确的邮箱地址&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">&#x27;phone&#x27;</span>,</span><br><span class="line">    reg: <span class="regexp">/^\d&#123;11&#125;$/</span>,</span><br><span class="line">    tip: <span class="string">&quot;请输入正确的手机号码&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">&#x27;date&#x27;</span>,</span><br><span class="line">    reg: <span class="regexp">/^\d&#123;4&#125;-\d&#123;1,2&#125;-\d&#123;1,2&#125;$/</span>,</span><br><span class="line">    tip: <span class="string">&quot;请输入正确的出生日期&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">&#x27;cn&#x27;</span>,</span><br><span class="line">    reg: <span class="regexp">/^[\u4e00-\u9fa5]&#123;2,4&#125;$/</span>,</span><br><span class="line">    tip: <span class="string">&quot;请输入正确的姓名&quot;</span></span><br><span class="line">  &#125;];</span><br><span class="line"></span><br><span class="line">addCheck(<span class="string">&#x27;frm&#x27;</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//给文本框添加验证</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addCheck</span>(<span class="params">formId</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> i = <span class="number">0</span>,</span><br><span class="line">      len = <span class="number">0</span>,</span><br><span class="line">      frm =<span class="built_in">document</span>.getElementById(formId);</span><br><span class="line">  len = frm.children.length;</span><br><span class="line">  <span class="keyword">for</span> (; i &lt; len; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> element = frm.children[i];</span><br><span class="line">    <span class="comment">// 表单元素中有name属性的元素添加验证</span></span><br><span class="line">    <span class="keyword">if</span> (element.name) &#123;</span><br><span class="line">      element.onblur = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 使用dataset获取data-自定义属性的值</span></span><br><span class="line">        <span class="keyword">var</span> ruleName = <span class="built_in">this</span>.dataset.rule;</span><br><span class="line">        <span class="keyword">var</span> rule =getRuleByRuleName(rules, ruleName);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> span = <span class="built_in">this</span>.nextElementSibling;</span><br><span class="line">        <span class="comment">//判断验证是否成功</span></span><br><span class="line">        <span class="keyword">if</span>(!rule.reg.test(<span class="built_in">this</span>.value) )&#123;</span><br><span class="line">          <span class="comment">//验证不成功</span></span><br><span class="line">          span.innerText = rule.tip;</span><br><span class="line">          span.style.color = <span class="string">&quot;red&quot;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">          <span class="comment">//验证成功</span></span><br><span class="line">          span.innerText = <span class="string">&quot;&quot;</span>;</span><br><span class="line">          span.style.color = <span class="string">&quot;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 根据规则的名称获取规则对象</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRuleByRuleName</span>(<span class="params">rules, ruleName</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> i = <span class="number">0</span>,</span><br><span class="line">      len = rules.length;</span><br><span class="line">  <span class="keyword">var</span> rule = <span class="literal">null</span>;</span><br><span class="line">  <span class="keyword">for</span> (; i &lt; len; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (rules[i].name == ruleName) &#123;</span><br><span class="line">      rule = rules[i];</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> rule;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      <categories>
+        <category>前端基础</category>
+      </categories>
       <tags>
         <tag>javascript</tag>
       </tags>
