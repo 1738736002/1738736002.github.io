@@ -401,18 +401,6 @@
       </tags>
   </entry>
   <entry>
-    <title>小科技</title>
-    <url>/2020/09/20/science/</url>
-    <content><![CDATA[<p><img data-src="G:\myblog\public\images\bg.jpg" alt="img"></p>
-]]></content>
-      <categories>
-        <category>小黑洞</category>
-      </categories>
-      <tags>
-        <tag>science</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo的使用</title>
     <url>/2020/09/10/hexo/</url>
     <content><![CDATA[<p>焦点事件开发接口你家乐福电脑管家丝黛芬妮攻克艰难库你看看鼓风机纳斯达克就能看，发你， 白癜风那个可难辅导班开始呢分开多功能不可能不开放都能看bn<br>规范读书报告发烧吧<br>sdfgnsfnshg<br>“&lt;”!–more–”&gt;”用来将多余部分省略<br>ngsdfsdfn</p>
@@ -424,6 +412,18 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小科技</title>
+    <url>/2020/09/20/science/</url>
+    <content><![CDATA[<p>图片测试<br><img data-src="https://tva1.sinaimg.cn/large/006hhtu2ly1giyl371rc9j30jg0jgta8.jpg" alt="1.11"></p>
+]]></content>
+      <categories>
+        <category>小黑洞</category>
+      </categories>
+      <tags>
+        <tag>science</tag>
       </tags>
   </entry>
   <entry>
@@ -7831,7 +7831,7 @@
 <p>验证日期 2012-5-01</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">^\d&#123;<span class="number">4</span>&#125;-\d&#123;<span class="number">1</span>,<span class="number">2</span>&#125;-\d&#123;<span class="number">1</span>,<span class="number">2</span>&#125;$</span><br></pre></td></tr></table></figure>
 
-<p>验证邮箱 <a href="mailto:&#120;&#120;&#x78;&#64;&#x69;&#x74;&#99;&#x61;&#115;&#116;&#x2e;&#x63;&#110;">&#120;&#120;&#x78;&#64;&#x69;&#x74;&#99;&#x61;&#115;&#116;&#x2e;&#x63;&#110;</a>：</p>
+<p>验证邮箱 <a href="mailto:&#120;&#x78;&#x78;&#x40;&#105;&#x74;&#x63;&#x61;&#115;&#116;&#46;&#x63;&#110;">&#120;&#x78;&#x78;&#x40;&#105;&#x74;&#x63;&#x61;&#115;&#116;&#46;&#x63;&#110;</a>：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">^\w+@\w+\.\w+$</span><br></pre></td></tr></table></figure>
 
 <p>验证IP地址 192.168.1.10</p>
